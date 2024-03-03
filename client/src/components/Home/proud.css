@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+
+.wrappere{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 400px;
+    background-color: azure;
+}
+.description{
+display: block;
+flex-direction: column;
+flex-basis: 50%;
+
+/* font-family: 'Lora', serif; */
+}
+.description p {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #000;
+    padding: 6px;
+}
+.description h1{
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    color: #000;
+    padding: 6px;
+    font-weight: bold;
+    
+}
+.btn{
+    display:flex;
+    margin: 6px;
+    flex-direction: space-between;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn a:hover,
+.btn button:hover {
+  transform: scale(1.05);
+}
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .wrapper {
+      flex-direction: row;
+    }
+  
+    .description {
+      flex-basis: 50%;
+    }
+  
+    #logo {
+      margin-left: 20px; /* Adjust margin as needed */
+    }
+  }
